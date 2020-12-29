@@ -1,0 +1,49 @@
+{
+  "name": "MiWaHR/scheduler-test",
+  "description": "scheduler-test",
+  "keywords": [
+    "scheduler-test"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mihail Krivulya",
+      "email": "miwahr1@gmail.com"
+    }
+  ],
+  "require": {
+    "ext-json": "*",
+    "php": ">=7"
+  },
+  "require-dev": {
+    "laravel/framework": "^5.6",
+    "mockery/mockery": "0.9.*",
+    "fzaninotto/faker": "~1.9",
+    "phpunit/phpunit": "7",
+    "orchestra/testbench": "~3.6",
+    "orchestra/testbench-browser-kit": "~3.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "MiWaHR\\SchedulerTest\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "MiWaHR\\SchedulerTest\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "laravel": {
+      "providers": [
+        "MiWaHR\\SchedulerTest\\SchedulerTestServiceProvider"
+      ]
+    }
+  }
+}
